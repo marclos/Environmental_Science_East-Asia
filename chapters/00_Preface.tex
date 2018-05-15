@@ -1,0 +1,411 @@
+\chapter*{Preface}
+
+This is the preface and it is created using a TeX field in a
+paragraph by itself containing \verb|\chapter*{Preface}|. When the
+document is loaded, this appears if it were a normal chapter, but
+it is actually an unnumbered chapter. The \verb|markboth| TeX
+field at the beginning of this paragraph sets the correct page
+heading for the Preface portion of the document. The preface does
+not appear in the table of contents.
+
+\section{About the Standard Latex Book Class}
+
+This is the body (mainmatter) of the Standard LaTeX Book document.
+
+The front matter has a number of sample entries that you should
+replace with your own.
+
+Replace this text with the body of your book. Do not delete the
+\verb|mainmatter| TeX field found above in a paragraph by itself
+or the numbering of different objects will be wrong.
+
+The typesetting specification selected by this document uses the
+default class options. There are, however, a number of class
+options. The available options include setting the paper size and
+the point size of the font used in the body of the document etc.
+Details are given as comments right after the \verb|documentclass|
+command.
+
+\section{The Most Important Features of this Document}
+
+\section{Section}
+
+Use the \verb"\section{Section}" command for major sections, and the
+\verb"\subsection{Subsection}" command for subsections, etc.
+
+\subsection{Subsection}
+
+This is just some text under a subsection.
+
+\subsubsection{Subsubsection}
+
+This is just some text under a subsubsection.
+
+\paragraph{Subsubsubsection}
+
+This is just some  text under a subsubsubsection.
+
+\subparagraph{Subsubsubsubsection}
+
+This is just some text under a subsubsubsubsection.
+
+\section{Typesetting Commands}
+
+SSelect a part of the text then click on the button Emphasize (H!), or Bold (Fs), or
+Italic (Kt), or Slanted (Kt) to typeset \emph{Emphasize}, \textbf{Bold},
+\textit{Italics}, \textsl{Slanted} texts.
+
+You can also typeset \textrm{Roman}, \textsf{Sans Serif}, \textsc{Small Caps}, and
+\texttt{Typewriter} texts.
+
+You can also apply the special, mathematics only commands $\mathbb{BLACKBOARD}$
+$\mathbb{BOLD}$, $\mathcal{CALLIGRAPHIC}$, and $\mathfrak{fraktur}$. Note that
+blackboard bold and calligraphic are correct only when applied to uppercase letters A
+through Z.
+
+You can apply the size tags -- Format menu, Font size submenu -- {\tiny tiny},
+{\scriptsize scriptsize}, {\footnotesize footnotesize}, {\small small}, {\normalsize
+normalsize}, {\large large}, {\Large Large}, {\LARGE LARGE}, {\huge huge} and {\Huge
+Huge}.
+
+You can use the \verb"\begin{quote} etc. \end{quote}" environment for typesetting
+short quotations. Select the text then click on Insert, Quotations, Short Quotations:
+
+\begin{quote}
+The buck stops here. \emph{Harry Truman}
+
+Ask not what your country can do for you; ask what you can do for your
+country. \emph{John F Kennedy}
+
+I am not a crook. \emph{Richard Nixon}
+
+I did not have sexual relations with that woman, Miss Lewinsky. \emph{Bill Clinton}
+\end{quote}
+
+The Quotation environment is used for quotations of more than one paragraph. Following
+is the beginning of \emph{The Jungle Books} by Rudyard Kipling. (You should select
+the text first then click on Insert, Quotations, Quotation):
+
+\begin{quotation}
+It was seven o'clock of a very warm evening in the Seeonee Hills when Father Wolf woke
+up from his day's rest, scratched himself, yawned  and spread out his paws one after
+the other to get rid of sleepy feeling in their tips. Mother Wolf lay with her big gray
+nose dropped across her four tumbling, squealing cubs, and the moon shone into the
+mouth of the cave where they all lived. ``\emph{Augrh}'' said Father Wolf, ``it is time
+to hunt again.'' And he was going to spring down hill when a little shadow with a bushy
+tail crossed the threshold and whined: ``Good luck go with you, O Chief of the Wolves;
+and good luck and strong white teeth go with the noble children, that they may never
+forget the hungry in this world.''
+
+It was the jackal---Tabaqui the Dish-licker---and the wolves of India despise Tabaqui
+because he runs about making mischief, and telling tales, and eating rags and pieces of
+leather from the village rubbish-heaps. But they are afraid of him too, because
+Tabaqui, more than any one else in the jungle, is apt to go mad, and then he forgets
+that he was afraid of anyone, and runs through the forest biting everything in his way.
+\end{quotation}
+
+Use the Verbatim environment if you want \LaTeX\ to preserve spacing, perhaps when
+including a fragment from a program such as:
+\begin{verbatim}
+#include <iostream>         // < > is used for standard libraries.
+void main(void)             // ''main'' method always called first.
+{
+ cout << ''This is a message.'';
+                            // Send to output stream.
+}
+\end{verbatim}
+(After selecting the text click on Insert, Code Environments, Code.)
+
+
+\section{Mathematics and Text}
+
+It holds \cite{KarelRektorys} the following
+\begin{theorem}
+(The Currant minimax principle.) Let $T$ be completely continuous selfadjoint operator
+in a Hilbert space $H$. Let $n$ be an arbitrary integer and let $u_1,\ldots,u_{n-1}$ be
+an arbitrary system of $n-1$ linearly independent elements of $H$. Denote
+\begin{equation}
+\max_{\substack{v\in H, v\neq
+0\\(v,u_1)=0,\ldots,(v,u_n)=0}}\frac{(Tv,v)}{(v,v)}=m(u_1,\ldots, u_{n-1})
+\label{eqn10}
+\end{equation}
+Then the $n$-th eigenvalue of $T$ is equal to the minimum of these maxima, when
+minimizing over all linearly independent systems $u_1,\ldots u_{n-1}$ in $H$,
+\begin{equation}
+\mu_n = \min_{\substack{u_1,\ldots, u_{n-1}\in H}} m(u_1,\ldots, u_{n-1}) \label{eqn20}
+\end{equation}
+\end{theorem}
+The above equations are automatically numbered as equation (\ref{eqn10}) and
+(\ref{eqn20}).
+
+
+\section{Lists Environments}
+
+You can create numbered, bulleted, and description lists
+(Use the Itemization or Enumeration buttons, or click on the Insert menu
+then chose an item from the Enumeration submenu):
+
+\begin{enumerate}
+\item List item 1
+
+\item List item 2
+
+\begin{enumerate}
+\item A list item under a list item.
+
+\item Just another list item under a list item.
+
+\begin{enumerate}
+\item Third level list item under a list item.
+
+\begin{enumerate}
+\item Fourth and final level of list items allowed.
+\end{enumerate}
+\end{enumerate}
+\end{enumerate}
+\end{enumerate}
+
+\begin{itemize}
+\item Bullet item 1
+
+\item Bullet item 2
+
+\begin{itemize}
+\item Second level bullet item.
+
+\begin{itemize}
+\item Third level bullet item.
+
+\begin{itemize}
+\item Fourth (and final) level bullet item.
+\end{itemize}
+\end{itemize}
+\end{itemize}
+\end{itemize}
+
+\begin{description}
+\item[Description List] Each description list item has a term followed by the
+description of that term.
+
+\item[Bunyip] Mythical beast of Australian Aboriginal legends.
+\end{description}
+
+\section{Theorem-Like Environments}
+
+The following theorem-like environments (in alphabetical order) are available
+in this style.
+
+\begin{acknowledgement}
+This is an acknowledgement
+\end{acknowledgement}
+
+\begin{algorithm}
+This is an algorithm
+\end{algorithm}
+
+\begin{axiom}
+This is an axiom
+\end{axiom}
+
+\begin{case}
+This is a case
+\end{case}
+
+\begin{claim}
+This is a claim
+\end{claim}
+
+\begin{conclusion}
+This is a conclusion
+\end{conclusion}
+
+\begin{condition}
+This is a condition
+\end{condition}
+
+\begin{conjecture}
+This is a conjecture
+\end{conjecture}
+
+\begin{corollary}
+This is a corollary
+\end{corollary}
+
+\begin{criterion}
+This is a criterion
+\end{criterion}
+
+\begin{definition}
+This is a definition
+\end{definition}
+
+\begin{example}
+This is an example
+\end{example}
+
+\begin{exercise}
+This is an exercise
+\end{exercise}
+
+\begin{lemma}
+This is a lemma
+\end{lemma}
+
+\begin{proof}
+This is the proof of the lemma.
+\end{proof}
+
+\begin{notation}
+This is notation
+\end{notation}
+
+\begin{problem}
+This is a problem
+\end{problem}
+
+\begin{proposition}
+This is a proposition
+\end{proposition}
+
+\begin{remark}
+This is a remark
+\end{remark}
+
+\begin{summary}
+This is a summary
+\end{summary}
+
+\begin{theorem}
+This is a theorem
+\end{theorem}
+
+\begin{proof}
+[Proof of the Main Theorem]This is the proof.
+\end{proof}
+
+\chapter{Preface}
+
+\subsection{Guiding Principles}
+
+In this project, the EnviroLab Asia fellows have written a textbook that highlights examples of environmental processes that occur along a vertical axis. 
+
+Each student contributes to one theme, composed of two examples that highlight environmental issues of East Asia. However, our goal is not to blame East Asian, but to point to linkages of how a range of globalized economy contribute to these environmental problems. 
+
+In the end, it would be useful for us to acknowledge we have some capacity to address these how these global linkages could be modified to reduce these environmental issues. 
+
+\section{Goals}
+
+Processes across horizontal boundaries define many environmental patterns that frame human interactions with the environment. How do humans impact processes that cross these boundaries and how do humans influence these ecosystem interface?
+
+\subsection{Rationale}
+
+
+\section{Acknowledgments}
+
+Everyone in the world!
+
+\subsection{Activity}
+
+Each group will be composed of two students, that will become experts and teach their classmates on the topic. 
+
+
+\section{Patterns and Processes in Scale}
+
+How do environmental interfaces in East Asia influence human infrastructure and vice versa?
+
+\subsection{Project Themes}
+
+\begin{description}
+	\item[A. Mantle-Lithosphere] The Earth's core and mantel are active agents in the definition and processes that influence tectonic and landforms -- but also frame how, where, and when natural disasters occur. 
+	\item[B. Space-Atmosphere Interface] These might include the Earth's energy budget, drivers of climate and climate change, UV radiation and ozone processes.
+	\item[C. Soil-Air Interface] Pedogenesis of soils includes climate (rain, air temperatures), atmospheric deposition of dust and other particles and gas exchange. 
+	\item[D. Water-Air Interface] Light and gas exchange are the most common discussed fluxes across the air-water interface, but various dead and living biotic material also comes from or is deposited into the water column.
+	\item[E. Benthos-Water Interface] The flow of ions, organic matter deposited, gas and nutrient exchanges.
+\end{description}
+
+\section{East Asia and the World}
+
+
+\section{Setting Up Book Project}
+
+\subsubsection{``Child'' Rnw Contributions}
+
+This is a chapter that we can input into the text... you will each create a chapter without the preamble and begin and end document... that can be integrated into a single book! 
+
+\section{Thoughts for the Contributors}
+
+This template will NOT teach you how to use \LaTeX! To accomplish that, we'll rely on some great online resource that you can find on the project page. 
+
+Instead this section of the document is designed to demonstrate how our textbook will look, feel, and ultimately how we contribute to the project.
+
+This document also compiles all of our projects into a single PDF, when each ``child'' Rnw is ready to be included.
+
+\subsection{Using Sections To Create Text Structure}
+
+You should divide up your chapter into sections and subsections...
+
+
+We may dispense with subsubsections, but for now they might be useful. We will use section, subsection, and subsubsection to break up the topic into bite sizes. 
+
+\section{Some Type Setting Stuff}
+
+\subsection{Making bulletted lists, enumerations...}
+
+\begin{itemize}
+\item one
+\item two 
+\item three
+\end{itemize}
+
+We use special commands to create an itemized list.
+
+\subsection{Peer Review Commenting}
+
+You can put your comments in square brackets and in color for things that need help. \textcolor{red}{[This section is confusing, I am not sure what commmenting means.]}
+
+\subsection{Be sure to use ascII characters}
+
+\LaTeX doesn't like a range of characters or they reserved for special behavior...
+
+For example, the \# is used for tabs in a table environment. \% is used to make comments, thus stuff behind a \% is ignored. There are lots of others, but these come up the most.
+
+\subsection{Creating equations}
+
+One of the most powerful parts of \LaTeX is how it can be used to write complex equations, with all those symbols and Greek letters! This can be done inline $y = mx + b + \epsilon$ for fairly simple equations, or set apart for more complex equations:
+
+\begin{equation}
+\int_0^\infty e^{-x^2} dx=\frac{\sqrt{\pi}}{2}
+\end{equation}
+
+\section{Adding R stuff, figures, etc}
+
+\subsection{Why bother?}
+
+We can make changes to the document on the fly, which new or updated data, e.g. in my intro to R I automatically download Mauna Loa CO$_2$ data so the graphic doesn't go out of date, which has been important for something like carbon dioxide that goes up quite rapidly each year.
+
+\subsection{Creating/Getting Data}
+
+When we go to press, it will be useful to make this disappear, where echo=F.
+
+\subsection{Checking Data}
+
+\subsection{Creating a floating figure}
+
+This is my floating figure (Figure \ref{fig:plot}).
+
+\begin{figure}
+\label{fig:plot}
+\caption{My plot's caption is here!}
+\end{figure}
+
+I suggest you create a template that has a book and a `child' as the chapter, then I can link the child into the larger text...
+
+
+\section{Creating References}
+
+\section{Bibliography generation in RStudio using knitr}
+
+This document was produced in RStudio using the knitr package \citep{knitr2013} by \url{http://texblog.org}. 
+
+Also try \citet{fenner2018}.
+ 
