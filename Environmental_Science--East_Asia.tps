@@ -12,15 +12,33 @@ MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
 NormalPos.right=1027
-NormalPos.bottom=361
+NormalPos.bottom=365
 Class=LaTeXView
-Document=chapters\04_Climate_Records.tex
+Document=chapters\00_Preface.tex
 
 [Frame0_View0,0]
-TopLine=0
-Cursor=41
+TopLine=368
+Cursor=11988
+
+[Frame1]
+Flags=0
+ShowCmd=1
+MinPos.x=-1
+MinPos.y=-1
+MaxPos.x=-1
+MaxPos.y=-1
+NormalPos.left=4
+NormalPos.top=26
+NormalPos.right=1027
+NormalPos.bottom=365
+Class=LaTeXView
+Document=Environmental_Science--East_Asia.tex
+
+[Frame1_View0,0]
+TopLine=150
+Cursor=5897
 
 [SessionInfo]
-FrameCount=1
+FrameCount=2
 ActiveFrame=0
 

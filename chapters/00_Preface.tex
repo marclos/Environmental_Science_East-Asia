@@ -32,12 +32,36 @@ Everyone in the world!
 
 
 
+
+
+\section{Thoughts for the Contributors}
+
+\subsection{Why Learn \LaTeX?}
+
+\subsection{How to Learn \LaTeX?}
+
+This template will NOT teach you how to use \LaTeX! To accomplish that, we'll rely on some great online resource that you can find on the project page. 
+
+Instead this section of the document is designed to demonstrate how our textbook will look, feel, and ultimately how we contribute to the project.
+
+This document also compiles all of our projects into a single PDF, where each chapter is composed of a input tex file.
+
+\subsection{Noting Your Contribution}
+
+Because this is an ongoing project, you should record your contribution to each chapter -- but also let go of these contributions at some point; Others might revise and their authorship might take some precedence, so you should both invest in the product but also be willing to detach from the final outcome as others contribute. This will feel uncomfortable at times, but please note from the beginning this is a social process and as such subject to negotiation. Please be generous to the authors that laid the foundation and be respectful of those that follow. 
+
+\subsection{Using Sections To Create Text Structure}
+
+You should divide up your chapter into sections and subsections...
+
+We may dispense with subsubsections, but for now they might be useful. We will use section, subsection, and subsubsection to break up the topic into bite sizes. 
+
 \section{Setting Up Book Project--Type Setting w/ \LaTeX}
 
 \subsection{The Standard Latex Book Class}
 
 
-\section{The Most Important Features of this Document}
+\section{Structuring the Text with Nested Hierarchies}
 
 \section{Section}
 
@@ -59,6 +83,8 @@ This is just some  text under a subsubsubsection.
 \subparagraph{Subsubsubsubsection}
 
 This is just some text under a subsubsubsubsection.
+
+NOTE: if you have nested levels, they MUST be followed by the lowest level in the section before a paragraph is started -- in contrast to what is shown above!
 
 \section{Typesetting Commands}
 
@@ -128,9 +154,25 @@ void main(void)             // ''main'' method always called first.
 (After selecting the text click on Insert, Code Environments, Code.)
 
 
-\section{Mathematics and Text}
+\subsection{Mathematics and Text}
 
-It holds \cite{KarelRektorys} the following
+\subsubsection{Warning: Special Characters}
+
+When you use percent and ampersand symbols, hash tags, and other non-standard ASCII characters, \LaTeX will be very uncooperative. So, do yourself a favor and make sure you understand that these are used for special typesetting functions. To use them you have to ``escape'' and use commands to get them to do what you might usually expect!  \% \# \& \`e \~n `` and '' to show a few that do not reflect the key stroke you might expect. 
+
+\LaTeX doesn't like a range of characters or they reserved for special behavior...
+
+For example, the \# is used for tabs in a table environment. \% is used to make comments, thus stuff behind a \% is ignored. There are lots of others, but these come up the most.
+
+\subsubsection{Creating equations}
+
+One of the most powerful parts of \LaTeX is how it can be used to write complex equations, with all those symbols and Greek letters! This can be done inline $y = mx + b + \epsilon$ for fairly simple equations, or set apart for more complex equations:
+
+\begin{equation}
+\int_0^\infty e^{-x^2} dx=\frac{\sqrt{\pi}}{2}
+\end{equation}
+
+\subsubsection{Theorems, etc}
 \begin{theorem}
 (The Currant minimax principle.) Let $T$ be completely continuous selfadjoint operator
 in a Hilbert space $H$. Let $n$ be an arbitrary integer and let $u_1,\ldots,u_{n-1}$ be
@@ -150,7 +192,9 @@ The above equations are automatically numbered as equation (\ref{eqn10}) and
 (\ref{eqn20}).
 
 
-\section{Lists Environments}
+\subsection{Lists Environments: Making bulletted, numbered, description lists}
+
+We use special commands to create an itemized list.
 
 You can create numbered, bulleted, and description lists
 (Use the Itemization or Enumeration buttons, or click on the Insert menu
@@ -201,7 +245,7 @@ description of that term.
 \item[Bunyip] Mythical beast of Australian Aboriginal legends.
 \end{description}
 
-\section{Theorem-Like Environments}
+\subsection{Theorem-Like Environments}
 
 The following theorem-like environments (in alphabetical order) are available
 in this style.
@@ -305,51 +349,11 @@ This is an exercise
 
 %This is a chapter that we can input into the text... you will each create a chapter without the preamble and begin and end document... that can be integrated into a single book! 
 
-\section{Thoughts for the Contributors}
-
-This template will NOT teach you how to use \LaTeX! To accomplish that, we'll rely on some great online resource that you can find on the project page. 
-
-Instead this section of the document is designed to demonstrate how our textbook will look, feel, and ultimately how we contribute to the project.
-
-This document also compiles all of our projects into a single PDF, when each ``child'' Rnw is ready to be included.
-
-\subsection{Using Sections To Create Text Structure}
-
-You should divide up your chapter into sections and subsections...
-
-We may dispense with subsubsections, but for now they might be useful. We will use section, subsection, and subsubsection to break up the topic into bite sizes. 
-
-\section{Some Type Setting Stuff}
-
-\subsection{Making bulletted lists, enumerations...}
-
-\begin{itemize}
-\item one
-\item two 
-\item three
-\end{itemize}
-
-We use special commands to create an itemized list.
-
 \subsection{Peer Review Commenting}
 
-You can put your comments in square brackets and in color for things that need help. \textcolor{red}{[This section is confusing, I am not sure what commmenting means.]}
+You can put your comments in square brackets and in color for things that need help. \textcolor{red}{[This section is confusing, I am not sure what commenting means.]}
 
-\subsection{Be sure to use ascII characters}
-
-\LaTeX doesn't like a range of characters or they reserved for special behavior...
-
-For example, the \# is used for tabs in a table environment. \% is used to make comments, thus stuff behind a \% is ignored. There are lots of others, but these come up the most.
-
-\subsection{Creating equations}
-
-One of the most powerful parts of \LaTeX is how it can be used to write complex equations, with all those symbols and Greek letters! This can be done inline $y = mx + b + \epsilon$ for fairly simple equations, or set apart for more complex equations:
-
-\begin{equation}
-\int_0^\infty e^{-x^2} dx=\frac{\sqrt{\pi}}{2}
-\end{equation}
-
-\section{Adding Figures, etc}
+\subsection{Adding Figures, etc}
 
 \subsection{Using Rnw Files -- Deprecated}
 
@@ -364,13 +368,15 @@ This is my floating figure (Figure \ref{fig:plot}).
 \caption{My plot's caption is here!}
 \end{figure}
 
-\section{Creating References}
+\subsection{Creating References, Indicies, and Glossaries}
 
-\section{Bibliography generation}
+\subsubsection{Bibliography generation}
 
 This document was produced in RStudio using the knitr package \citep{knitr2013} by \url{http://texblog.org}. 
 
 Also try \citet{fenner2018} to create an author title. 
 
 Currently, we are using the ecology.bst, but it has trouble with misc type of references, so I will changing this in 2019. 
+
+\subsubsection{Creating glossary words}
  

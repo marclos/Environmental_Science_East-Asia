@@ -122,15 +122,10 @@
 \maketitle
 \tableofcontents
 
-
 \input{chapters/00_Preface}
-
 \input{chapters/01_Introduction}
 
 \mainmatter
-
-
-
 \part{Vertical Processes}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -138,40 +133,30 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \input{chapters/02_EarthSun}
-
+\input{chapters/22_Mining}
 \input{chapters/03_Fossil_Fuels}
-
 \input{chapters/035_Development_GHG}
-
 \input{chapters/039_Evaporation_Precipitation}
-
 \input{chapters/05_Pedogenesis}
-
 \input{chapters/06_Biomass}
-
 \input{chapters/07_Peatlands}
-
 \input{chapters/08_Benthos}
-
-
 \input{chapters/09_Subsidence}
-
 \input{chapters/10_Hazards}
 
 \part{Lateral Transport}
 
 \input{chapters/04_Climate_Records}
-
-\input{chapters/XX_Biomimicry}
-
 \input{chapters/19_Floods_and_Droughts}
-
 \input{chapters/20_Agroecology_Water_Korea}
-
+\input{chapters/23_Water_Quality}
 \input{chapters/21_Air_Quality}
 
-\input{chapters/22_Mining}
+\part{Bread Crumbs and Human Scenarios}
 
+\input{chapters/XX_Biomimicry}
+\input{chapters/XX_Sustainable_Food_Systems}
+\input{chapters/XX_Social_Justice_Energy_Climate}
 
 \appendix
 
@@ -186,7 +171,7 @@ Some text for the second Appendix.
 
 \backmatter
 
-\chapter{Afterword}
+\part{Backmatter}
 
 The back matter often includes one or more of an index, an afterword,
 acknowledgements, a bibliography, a colophon, or any other similar item. In
@@ -194,14 +179,11 @@ the back matter, chapters do not produce a chapter number, but they are
 entered in the table of contents. If you are not using anything in the back
 matter, you can delete the back matter TeX field and everything that follows it.
 
-
 \renewcommand\bibname{References}
 \setlength{\bibsep}{2\baselineskip}
 \setlength\bibindent{.5in}
 \bibliography{References}
 
-
 \printglossary
-
 
 \end{document}
