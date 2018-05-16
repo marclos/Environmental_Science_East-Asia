@@ -51,6 +51,7 @@
 \usepackage{graphicx} % packages are used to modify the text and create bling.
 \usepackage{gensymb}
 \usepackage{natbib}
+\usepackage{glossaries}
 
 %\usepackage[usenames]{xcolor}% for commenting in color!
 \bibliographystyle{ecology}
@@ -112,6 +113,7 @@
 \title{Environmental Science: East Asia and the World}
 \author{EnviroLab Asia Fellows}
 
+\makeglossaries
 
 \begin{document}
 
@@ -119,6 +121,7 @@
 
 \maketitle
 \tableofcontents
+
 
 \input{chapters/00_Preface}
 
@@ -140,7 +143,7 @@
 
 \input{chapters/035_Development_GHG}
 
-\input{chapters/04_Climate_Records}
+\input{chapters/039_Evaporation_Precipitation}
 
 \input{chapters/05_Pedogenesis}
 
@@ -156,6 +159,8 @@
 \input{chapters/10_Hazards}
 
 \part{Lateral Transport}
+
+\input{chapters/04_Climate_Records}
 
 \input{chapters/XX_Biomimicry}
 
@@ -194,6 +199,9 @@ matter, you can delete the back matter TeX field and everything that follows it.
 \setlength{\bibsep}{2\baselineskip}
 \setlength\bibindent{.5in}
 \bibliography{References}
+
+
+\printglossary
 
 
 \end{document}

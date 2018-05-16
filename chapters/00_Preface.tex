@@ -206,49 +206,56 @@ description of that term.
 The following theorem-like environments (in alphabetical order) are available
 in this style.
 
-\begin{acknowledgement}
-This is an acknowledgement
-\end{acknowledgement}
+%\begin{acknowledgement}
+%This is an acknowledgement
+%\end{acknowledgement}
 
-\begin{algorithm}
-This is an algorithm
-\end{algorithm}
+%\begin{algorithm}
+%This is an algorithm
+%\end{algorithm}
 
-\begin{axiom}
-This is an axiom
-\end{axiom}
+%\begin{axiom}
+%This is an axiom
+%\end{axiom}
 
-\begin{case}
-This is a case
-\end{case}
+%\begin{case}
+%This is a case
+%\end{case}
 
-\begin{claim}
-This is a claim
-\end{claim}
+%\begin{claim}
+%This is a claim
+%\end{claim}
 
-\begin{conclusion}
-This is a conclusion
-\end{conclusion}
+%\begin{conclusion}
+%This is a conclusion
+%\end{conclusion}
 
-\begin{condition}
-This is a condition
-\end{condition}
+%\begin{condition}
+%This is a condition
+%\end{condition}
 
-\begin{conjecture}
-This is a conjecture
-\end{conjecture}
+%\begin{conjecture}
+%This is a conjecture
+%\end{conjecture}
 
-\begin{corollary}
-This is a corollary
-\end{corollary}
+%\begin{corollary}
+%This is a corollary
+%\end{corollary}
 
-\begin{criterion}
-This is a criterion
-\end{criterion}
+%\begin{criterion}
+%This is a criterion
+%\end{criterion}
+
+\newglossaryentry{peat}{
+	name=peat, 
+	description={peat is cool.}
+}
 
 \begin{definition}
-This is a definition
+This is a definition and the word is use in an glossary, e.g. \gls{peat}
 \end{definition}
+
+
 
 \begin{example}
 This is an example
@@ -343,17 +350,11 @@ One of the most powerful parts of \LaTeX is how it can be used to write complex 
 \int_0^\infty e^{-x^2} dx=\frac{\sqrt{\pi}}{2}
 \end{equation}
 
-\section{Adding R stuff, figures, etc}
+\section{Adding Figures, etc}
 
-\subsection{Why bother?}
+\subsection{Using Rnw Files -- Deprecated}
 
-We can make changes to the document on the fly, which new or updated data, e.g. in my intro to R I automatically download Mauna Loa CO$_2$ data so the graphic doesn't go out of date, which has been important for something like carbon dioxide that goes up quite rapidly each year.
-
-\subsection{Creating/Getting Data}
-
-When we go to press, it will be useful to make this disappear, where echo=F.
-
-\subsection{Checking Data}
+Originally, I used R and Rnw files that were converted to tex files, in Rstudio. However, this step was too complicated for students, so I now recommend the use of tex files and use Rstudio to create figure files as a separate process. Thus, I will no longer explain the process in this document. 
 
 \subsection{Creating a floating figure}
 
@@ -364,14 +365,13 @@ This is my floating figure (Figure \ref{fig:plot}).
 \caption{My plot's caption is here!}
 \end{figure}
 
-I suggest you create a template that has a book and a `child' as the chapter, then I can link the child into the larger text...
-
-
 \section{Creating References}
 
-\section{Bibliography generation in RStudio using knitr}
+\section{Bibliography generation}
 
 This document was produced in RStudio using the knitr package \citep{knitr2013} by \url{http://texblog.org}. 
 
-Also try \citet{fenner2018}.
+Also try \citet{fenner2018} to create an author title. 
+
+Currently, we are using the ecology.bst, but it has trouble with misc type of references, so I will changing this in 2019. 
  
