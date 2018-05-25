@@ -56,7 +56,12 @@ Three of the sixty photographs contained Earth as a single point of light. By pr
 
     Nobody is entirely sure how the solar system formed, but there are a few \textbf{hypotheses} on how it did. Here, we will present the Nebular hypothesis of its formation.
 
-    As we know it today, the solar system is anywhere from 4.5 to 4.8 billion years old. Scientists believe stars form from huge clouds of gas (called a \textbf{nebulae}) and other, heavier elements. The gas is compressed by gravity, becoming more and more dense until the gas gets so hot that two protons combine to form helium. %\footnote{
+
+\newglossaryentry{nebulae}{
+	name=Nebulae, 
+	description={huge clouds of gas.}
+}
+    As we know it today, the solar system is anywhere from 4.5 to 4.8 billion years old. Scientists believe stars form from huge clouds of gas (called a \gls{nebulae}) and other, heavier elements. The gas is compressed by gravity, becoming more and more dense until the gas gets so hot that two protons combine to form helium. %\footnote{
         % This is not the complete picture. If p is a proton, d is deuterium (a proton and neutron binded together), e$^+$ is a positron (anti-electron), $\nu_e$ is a neutrino, and $\gamma$ is a high energy photon, then the actual reaction looks something like:
         % \begin{align*}
         % \text{p} + \text{p} &\to \text{d} + \text{e}^{+} + \nu_e + \SI{0.4}{\mega \electronvolt}\\
@@ -172,8 +177,10 @@ Three of the sixty photographs contained Earth as a single point of light. By pr
     which is actually a really good estimate for the earth's equilibrium temperature because the average surface temperature is measured to be \SI{288}{\kelvin} (\SI{15}{\celsius}) \citep{schroeder1999introduction} In fact, this simple model agrees too well! We had no right to be this close to what we measure with the crudeness of our assumptions. This will become apparent when we refine the model in Sec.~\ref{sub:shiny_earth}. However, before moving on to a better model, we should discuss the stability of the earth-sun system by discussing the concept of \textbf{feedback}---a process in which a system reacts to an action or behavior.
 
 
-    \subsubsection{Feedback---A Digression} % (fold)
-		
+%\begin{fbox}
+%\begin{minipage}{5in}
+
+\subsubsection{Feedback---A Digression} % (fold)
 		\textcolor{red}{[LET'S MAKE THIS INTO A TEXT BOX -- PROBABLY USING MINIPAGE FUNCTIONS.]}
     \label{ssub:feedback}
     Feedback loops crop up all over the natural world and are especially prominent when studying the environment. Because of this, being able to recognize and identify various feedback loops is an important skill to have.
@@ -182,9 +189,9 @@ Three of the sixty photographs contained Earth as a single point of light. By pr
 
     The concave ball (the leftmost) will try to return back to its starting location if displaced. This is known as a \textbf{stable equilibrium}. The initial displacement leads the ball to feel a restoring force pushing it back to where it started. The restoring force in this case would be gravity, and it is said to provide \textbf{negative feedback}. For the ball in the center, we have a situation of \textbf{neutral equilibrium}. If displaced it, it will simply have changed locations but will not return or roll away from its original position. There is \textbf{no feedback} in this situation. Lastly, for a ball on a convex surface (an \textbf{unstable equilibrium}), if it is nudged slightly, the ball will experience a force forcing it away from its equilibrium. As you may have guessed, this is an example of \textbf{positive feedback}. The adjectives of ``positive'' and ``negative'' are not meant to convey ``good'' or ``bad,'' rather they express the direction the system will move towards after being displaced: ``positive'' means move away from where it started whereas ``negative'' means returning to where it started.
 
-    \begin{figure}[ht]
-    \centering
-    \begin{tikzpicture}[scale = 1]
+    \begin{figure}%[ht]
+		\centering
+    \begin{tikzpicture}%[scale = 1]
         %%%%%%%%% ball in bowl %%%%%%%%%%%%%%%%%
         \draw[color = red, line width = 0.7pt] (0,0) circle(0.5);
         \draw[line width=1.pt] (-1.75, 0.5) .. controls(0,-0.88) .. (1.75, 0.5);  
@@ -211,6 +218,8 @@ Three of the sixty photographs contained Earth as a single point of light. By pr
 
     % subsubsection feedback (end)
 
+%\end{minipage}
+%\end{fbox}
 
     \subsection{The Shiny Earth Model} % (fold)
     \label{sub:shiny_earth}
@@ -345,6 +354,28 @@ Three of the sixty photographs contained Earth as a single point of light. By pr
         \draw[|->, color=gray, line width = 1] (0, 1.55) -- (9, 1.55);
         \node at (5,1.755) {Increasing Temperature};
     \end{tikzpicture}
+		
+		 \begin{tikzpicture}[scale = 1]
+				%%%%%%%%%% Icehouse bowl
+				\draw[line width=1.pt] (0+ -1.75, 0.5) .. controls(0+0,-0.88) .. (0+1.75, 0.5);
+				
+        \draw[line width=1.pt] (0., -0.8) .. controls(7.75-5.5,1.6) .. (4.0, 0);
+				\draw[line width=1.pt] (0., -0.5) .. controls(7.75-5.5,1.3) .. (3.9, 0);
+        \node at (1, -1.0) {Icehouse Earth};
+        %%%%%%%%% ball in bowl %%%%%%%%%%%%%%%%%
+        \draw[line width=1.pt] (5+ -1.75, 0.5) .. controls(5+0,-0.30) .. (5+1.75, 0.5); 
+        \node at (5, -1.0) {Earth Pleistocene};
+        %%%%%%%%% flat plane ball %%%%%%%%%%%%%%  
+        \draw[color = blue, line width = 0.7pt] (5+0,-0.010) circle(0.25);
+        %%%%%%%%%% ball on bowl %%%%%%%%%%%%%%%%%
+        \draw[line width=1.pt] (6.11, 0) .. controls(7.75,1.3) .. (10, -0.50);
+        \node at (9., -1.0) {Hothouse Earth};
+        
+				%%%%%%%%% label temperature
+				\draw[|->, color=red, line width = 1] (0, 1.55) -- (9, 1.55);
+        \node at (5,1.755) {Increasing Temperature};
+    \end{tikzpicture}
+		
     \caption{A simplified view of the feedback processes of the earth's surface temperature. If it gets too cold, there will be a runaway albedo effect much like the ice age where more and more ice forms on the Earth. This is an example of positive feedback. As the concentration of the greenhouse gases increases, there is a point of no return and we have a runaway greenhouse effect, i.e. positive feedback. Luckily we live in a ``sweetspot'' where these forces seem to cancel each other out. }
     \label{fig:earth_stability}
     \end{figure}

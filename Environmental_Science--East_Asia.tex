@@ -47,6 +47,11 @@
 \usepackage{csquotes} % block quotes
 \usepackage{tikz}
 \usepackage[inline, shortlabels]{enumitem} % inline enumeration
+%\usepackage{float}
+%\usepackage{appendix}
+%\usepackage{chngcntr}
+%\usepackage{etoolbox}
+
 
 \usepackage{graphicx} % packages are used to modify the text and create bling.
 \usepackage{gensymb}
@@ -72,27 +77,35 @@
 %----------------------------------------------------------
 \newtheorem{theorem}{Theorem}
 \newtheorem{acknowledgement}[theorem]{Acknowledgement}
-\newtheorem{algorithm}[theorem]{Algorithm}
-\newtheorem{axiom}[theorem]{Axiom}
-\newtheorem{case}[theorem]{Case}
-\newtheorem{claim}[theorem]{Claim}
-\newtheorem{conclusion}[theorem]{Conclusion}
-\newtheorem{condition}[theorem]{Condition}
-\newtheorem{conjecture}[theorem]{Conjecture}
-\newtheorem{corollary}[theorem]{Corollary}
-\newtheorem{criterion}[theorem]{Criterion}
+%\newtheorem{algorithm}[theorem]{Algorithm}
+%\newtheorem{axiom}[theorem]{Axiom}
+%\newtheorem{case}[theorem]{Case}
+%\newtheorem{claim}[theorem]{Claim}
+%\newtheorem{conclusion}[theorem]{Conclusion}
+%\newtheorem{condition}[theorem]{Condition}
+%\newtheorem{conjecture}[theorem]{Conjecture}
+%\newtheorem{corollary}[theorem]{Corollary}
+%\newtheorem{criterion}[theorem]{Criterion}
 \newtheorem{definition}[theorem]{Definition}
 \newtheorem{example}[theorem]{Example}
 \newtheorem{exercise}[theorem]{Exercise}
-\newtheorem{lemma}[theorem]{Lemma}
-\newtheorem{notation}[theorem]{Notation}
+%\newtheorem{lemma}[theorem]{Lemma}
+%\newtheorem{notation}[theorem]{Notation}
 \newtheorem{problem}[theorem]{Problem}
-\newtheorem{proposition}[theorem]{Proposition}
+%\newtheorem{proposition}[theorem]{Proposition}
 \newtheorem{remark}[theorem]{Remark}
 \newtheorem{solution}[theorem]{Solution}
 \newtheorem{summary}[theorem]{Summary}
 \newenvironment{proof}[1][Proof]{\textbf{#1.} }{\ \rule{0.5em}{0.5em}}
 %----------------------------------------------------------
+
+\AtBeginEnvironment{subappendices}{%
+\chapter*{Appendix}
+\addcontentsline{toc}{chapter}{Appendices}
+%\counterwithin{figure}{section}
+%\counterwithin{table}{section}
+}
+
 
 \graphicspath{{graphics/}}
 
@@ -134,11 +147,12 @@
 
 \input{chapters/02_EarthSun}
 \input{chapters/039_Evaporation_Precipitation}
+\input{chapters/06_Biomass}
+
 \input{chapters/03_Fossil_Fuels}
 \input{chapters/031_Non-GHG_Energies}
 
 \input{chapters/05_Pedogenesis}
-\input{chapters/06_Biomass}
 \input{chapters/07_Peatlands}
 
 \input{chapters/08_Benthos}
