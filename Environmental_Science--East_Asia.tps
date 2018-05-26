@@ -17,8 +17,8 @@ Class=LaTeXView
 Document=chapters\06_Biomass.tex
 
 [Frame0_View0,0]
-TopLine=27
-Cursor=2805
+TopLine=0
+Cursor=0
 
 [Frame1]
 Flags=0
@@ -53,7 +53,7 @@ Class=LaTeXView
 Document=chapters\00_Preface.tex
 
 [Frame2_View0,0]
-TopLine=354
+TopLine=364
 Cursor=12409
 
 [SessionInfo]
