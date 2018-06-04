@@ -52,26 +52,23 @@ Because this is an ongoing project, you should record your contribution to each 
 
 \section{Setting Up Book Project--Type Setting w/ \LaTeX}
 
-
 \subsection{The Standard Latex Book Class}
 
+Currently, the text is written using the standard book class. However, in 2019, I (Los Huertos) will convert the format to a Tufte book class. 
 
 \subsection{Structuring the Text with Nested Hierarchies}
 
-You should divide up your chapter into sections and subsections...Use the \verb"\section{Section}" command for major sections, and the \verb"\subsection{Subsection}" command for subsections, etc.
+Contributors divide their contributions into sections and subsections. This format allows a consistent approach to structuring the text and forcing themes to be organized in blocks that can be used to organize the overall text. We use section, subsection, and subsubsection to break up the topic into bite sizes. 
 
-We may dispense with subsubsections, but for now they might be useful. We will use section, subsection, and subsubsection to break up the topic into bite sizes. 
+To accomplish this, contributors use the \verb"\section{Section}" command for major sections, and the \verb"\subsection{Subsection}" command for subsections, and a similar approach for subsubsections. 
 
-NOTE: if you have nested levels, they MUST be followed by the lowest level in the section before a paragraph is started -- in contrast to what is shown above!
+NOTE: for each nested level, it MUST be followed by the lowest level in the section before a paragraph is started -- in contrast to what is shown above!
+
+NOTE: We may dispense with subsubsections in the future to provide a less blocky structure, but for now they remain useful. 
 
 \subsection{Font Changes}
 
-SSelect a part of the text then click on the button Emphasize (H!), or Bold (Fs), or
-Italic (Kt), or Slanted (Kt) to typeset \emph{Emphasize}, \textbf{Bold},
-\textit{Italics}, \textsl{Slanted} texts.
-
-You can also typeset \textrm{Roman}, \textsf{Sans Serif}, \textsc{Small Caps}, and
-\texttt{Typewriter} texts.
+We can use various methods to alter the typeset: \emph{Emphasize}, \textbf{Bold}, \textit{Italics}, and \textsl{Slanted}. We can also typeset \textrm{Roman}, \textsf{Sans Serif}, \textsc{Small Caps}, and \texttt{Typewriter} texts.  Look online to see the commands to accomplish these changes. 
 
 You can also apply the special, mathematics only commands $\mathbb{BLACKBOARD}$
 $\mathbb{BOLD}$, $\mathcal{CALLIGRAPHIC}$, and $\mathfrak{fraktur}$. Note that
@@ -335,9 +332,20 @@ Originally, I used R and Rnw files that were converted to tex files, in Rstudio.
 This is my floating figure (Figure \ref{fig:plot}).
 
 \begin{figure}
-\label{fig:plot}
+
 \caption{My plot's caption is here!}
+\label{fig:plot}
 \end{figure}
+
+\subsection{Using Boxes}
+
+\fbox{
+\begin{minipage}[c]{.9\textwidth}
+\subsection{minibox X}
+
+Some text
+\end{minipage}
+}
 
 \subsection{Creating References, Indicies, and Glossaries}
 

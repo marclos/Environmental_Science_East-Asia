@@ -6,7 +6,7 @@ Version=4
 MainFile=Environmental_Science--East_Asia.tex
 UseBibTeX=1
 UseMakeIndex=1
-ActiveProfile=LaTeX 3x ⇨ PDF (Sumatra)
+ActiveProfile=LaTeX ⇨ PDF (Sumatra)
 ProjectLanguage=en
 ProjectDialect=US
 
