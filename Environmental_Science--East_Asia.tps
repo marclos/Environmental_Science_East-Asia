@@ -11,14 +11,14 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
-NormalPos.right=938
-NormalPos.bottom=405
+NormalPos.right=1492
+NormalPos.bottom=717
 Class=LaTeXView
 Document=chapters\006_Peatlands.tex
 
 [Frame0_View0,0]
-TopLine=159
-Cursor=10809
+TopLine=131
+Cursor=12945
 
 [Frame1]
 Flags=0
@@ -29,13 +29,13 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
-NormalPos.right=938
-NormalPos.bottom=405
+NormalPos.right=1492
+NormalPos.bottom=717
 Class=LaTeXView
 Document=chapters\002_EarthSun.tex
 
 [Frame1_View0,0]
-TopLine=436
+TopLine=890
 Cursor=33629
 
 [Frame2]
@@ -47,13 +47,13 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
-NormalPos.right=938
-NormalPos.bottom=405
+NormalPos.right=1492
+NormalPos.bottom=717
 Class=LaTeXView
 Document=chapters\011_Mining.tex
 
 [Frame2_View0,0]
-TopLine=50
+TopLine=43
 Cursor=2031
 
 [Frame3]
@@ -65,13 +65,13 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
-NormalPos.right=938
-NormalPos.bottom=405
+NormalPos.right=1492
+NormalPos.bottom=717
 Class=LaTeXView
 Document=chapters\000_Preface.tex
 
 [Frame3_View0,0]
-TopLine=381
+TopLine=350
 Cursor=12488
 
 [Frame4]
@@ -83,13 +83,13 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
-NormalPos.right=938
-NormalPos.bottom=405
+NormalPos.right=1492
+NormalPos.bottom=717
 Class=LaTeXView
 Document=chapters\005_Pedogenesis.tex
 
 [Frame4_View0,0]
-TopLine=392
+TopLine=483
 Cursor=24191
 
 [Frame5]
@@ -101,8 +101,8 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
-NormalPos.right=938
-NormalPos.bottom=405
+NormalPos.right=1492
+NormalPos.bottom=717
 Class=LaTeXView
 Document=Environmental_Science--East_Asia.tex
 
