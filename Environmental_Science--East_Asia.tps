@@ -11,8 +11,8 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
-NormalPos.right=1090
-NormalPos.bottom=483
+NormalPos.right=1644
+NormalPos.bottom=899
 Class=LaTeXView
 Document=chapters\006_Peatlands.tex
 
@@ -29,14 +29,14 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
-NormalPos.right=1090
-NormalPos.bottom=483
+NormalPos.right=1644
+NormalPos.bottom=899
 Class=LaTeXView
 Document=Environmental_Science--East_Asia.tex
 
 [Frame1_View0,0]
-TopLine=30
-Cursor=2047
+TopLine=165
+Cursor=5210
 
 [Frame2]
 Flags=0
@@ -47,13 +47,13 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
-NormalPos.right=1090
-NormalPos.bottom=483
+NormalPos.right=1644
+NormalPos.bottom=899
 Class=LaTeXView
 Document=chapters\000_Preface.tex
 
 [Frame2_View0,0]
-TopLine=326
+TopLine=288
 Cursor=10702
 
 [Frame3]
@@ -65,18 +65,54 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
-NormalPos.right=1090
-NormalPos.bottom=483
+NormalPos.right=1644
+NormalPos.bottom=899
 Class=LaTeXView
 Document=chapters\014_Climate_Records.tex
 
 [Frame3_View0,0]
-TopLine=167
+TopLine=575
 Cursor=12415
 
+[Frame4]
+Flags=0
+ShowCmd=1
+MinPos.x=-1
+MinPos.y=-1
+MaxPos.x=-1
+MaxPos.y=-1
+NormalPos.left=4
+NormalPos.top=26
+NormalPos.right=1644
+NormalPos.bottom=899
+Class=LaTeXView
+Document=chapters\XXX_Peopling_of_East_Asia.tex
+
+[Frame4_View0,0]
+TopLine=0
+Cursor=90
+
+[Frame5]
+Flags=0
+ShowCmd=1
+MinPos.x=-1
+MinPos.y=-1
+MaxPos.x=-1
+MaxPos.y=-1
+NormalPos.left=4
+NormalPos.top=26
+NormalPos.right=1644
+NormalPos.bottom=899
+Class=LaTeXView
+Document=chapters\004_Biomass.tex
+
+[Frame5_View0,0]
+TopLine=138
+Cursor=8351
+
 [SessionInfo]
-FrameCount=4
-ActiveFrame=3
+FrameCount=6
+ActiveFrame=5
 
 [Bookmarks]
 chapters\00_Preface.tex=353 
