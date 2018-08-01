@@ -243,3 +243,4 @@ TSWLatexianTemp*
 
 # zip files
 *.zip
+.Rproj.user
