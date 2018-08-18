@@ -11,8 +11,8 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
-NormalPos.right=1090
-NormalPos.bottom=581
+NormalPos.right=1644
+NormalPos.bottom=615
 Class=LaTeXView
 Document=chapters\006_Peatlands.tex
 
@@ -29,8 +29,8 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
-NormalPos.right=1090
-NormalPos.bottom=581
+NormalPos.right=1644
+NormalPos.bottom=615
 Class=LaTeXView
 Document=Environmental_Science--East_Asia.tex
 
@@ -47,13 +47,13 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
-NormalPos.right=1090
-NormalPos.bottom=581
+NormalPos.right=1644
+NormalPos.bottom=615
 Class=LaTeXView
 Document=chapters\000_Preface.tex
 
 [Frame2_View0,0]
-TopLine=320
+TopLine=303
 Cursor=10702
 
 [Frame3]
@@ -65,13 +65,13 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
-NormalPos.right=1090
-NormalPos.bottom=581
+NormalPos.right=1644
+NormalPos.bottom=615
 Class=LaTeXView
 Document=chapters\014_Climate_Records.tex
 
 [Frame3_View0,0]
-TopLine=742
+TopLine=602
 Cursor=12415
 
 [Frame4]
@@ -83,8 +83,8 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
-NormalPos.right=1090
-NormalPos.bottom=581
+NormalPos.right=1644
+NormalPos.bottom=615
 Class=LaTeXView
 Document=chapters\XXX_Peopling_of_East_Asia.tex
 
@@ -101,13 +101,13 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
-NormalPos.right=1090
-NormalPos.bottom=581
+NormalPos.right=1644
+NormalPos.bottom=615
 Class=LaTeXView
 Document=chapters\004_Biomass.tex
 
 [Frame5_View0,0]
-TopLine=188
+TopLine=0
 Cursor=12203
 
 [SessionInfo]
